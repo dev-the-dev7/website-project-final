@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Smash Bros. Source</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<header><img src="./assets/SmashBrosSymbol.png" alt="Smash bros. characters"><h1>Smash Bros. Source</h1></header>
+		<nav>
+			<a id="left" href="index.html">Home</a><a href="news.html">News</a><a href="newcomers.html">Newcomers</a><a id="right" href="form.html">Form</a>
+		</nav>	
+	
+		<main>
+			<div id="faux-borders">
+				<div id="imgheader">
+					<h1>Website Review</h1>
+					<img src="./assets/SmashHeader3.png" alt="Smash Bros. characters">
+					<p>Like the website? Leave a positive review here. All fields are required.</p>
+				</div>
+			</div>
+
+			<h2>Review Form</h2>
+			<form action="http://placeholder.php" method="post">
+				<label for="myFirstName">First Name:</label>
+				<input type="text" name="myFirstName" id="myFirstName" required maxlength="15" pattern="[a-zA-Z]{1,15}">
+				<br>
+				<label for="myLastName"> Last Name:</label>
+				<input type="text" name="myLastName" id="myLastName" required maxlength="15" pattern="[A-Za-z]+">
+				<br>	
+				<label for="myEmail">E-mail:</label>
+				<input type="email" name="myEmail" id="myEmail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="you@yourdomain.com">
+				<br>
+				<label for="myRating">Website Rating:</label>
+				<input type="number" name="myRating" id="myRating" required min="1" max="10" placeholder="1-10">
+				<br>	
+				<label for="myComment">Comment:</label>
+				<textarea name="myComment" id="myComment" required rows="5" cols="40" maxlength="500"></textarea>
+				<br>
+				<input type="submit" id="mySubmit" value="Submit">	
+			</form>
+		</main>
+
+		<footer>
+			Author: Devin Vella Date:7/22/18<br>
+			"Copyright &copy; 2018 Smash Bros. Source"<br>
+			<a href="http://example@domain.com">example@domain.com</a>
+		</footer
+	</body>
+</html>

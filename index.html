@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Smash Bros. Source</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<header><img src="./assets/SmashBrosSymbol.png" alt="Smash bros. characters"><h1>Smash Bros. Source</h1></header>
+		<nav>
+			<a id="left" href="index.html">Home</a><a href="news.html">News</a><a href="newcomers.html">Newcomers</a><a id="right" href="form.html">Form</a>
+		</nav>
+
+		<main>
+			<div id="faux-borders">
+				<div id="imgheader">
+					<h1>Home</h1>
+					<img src="./assets/SmashHeader2.jpg" alt="Smash Bros. characters">
+					<h1>Welcome to Smash Bros. Source</h1>
+					<p>This site is a Smash Bros. hub with all the new information on the next game, Super Smash Bros. Ultimate. We cover all the confirmed characters,
+					stages, and assist trophies in the latest game along with the latest news and leaks. We even cover the most likely fighters that could make it into
+					Super Smash Bros. Ultimate by going over their popularity and other aspects.</p>
+				</div>
+			</div>
+			<br>
+
+			<div id="date">
+				<hr>
+				<h1>Release date: December 7, 2018</h1>
+				<p id="demo"></p>
+				<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date("Dec 7, 2018 15:37:25").getTime();
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+				// Get todays date and time
+				var now = new Date().getTime();
+
+				// Find the distance between now an the count down date
+				var distance = countDownDate - now;
+
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				// Display the result in the element with id="demo"
+				document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+				+ minutes + "m " + seconds + "s ";
+
+				// If the count down is finished, write some text 
+				if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+				}
+				}, 1000);
+				</script>	
+				<hr>
+			</div>
+
+			<h2>Characters Confirmed</h2>
+			<div class="container">	
+				<img src="./assets/FightersReturn.jpg" alt="Smash Bros. characters" class="floatleft">
+				<hr>
+				<p class="centertext">That's right, every character that as ever been in the Smash Bros. series is back. No one's favorite character will be cut this time
+				around, including even young Link and Pichu. Now, let us talk about the most exciting thing about Smash Bros., the newcomers. Though only two characters have
+				been confirmed so far, they are among the most requested ones. Inkling was the first one announced the same time the game was revealed, along with the long
+				time requested character, Ridley.</p>
+				<hr>
+				<div class="flex-container">
+					<div><img src="./assets/InklingChar.jpg" alt="Inkling"></div>
+					<div><img src="./assets/RidleyChar.jpg" alt="Ridley"></div>
+				</div>
+			</div>
+
+			<h2>Stages Confirmed</h2>
+			<div class="container">	
+				<img src="./assets/stage.jpg" alt="stages" class="floatleft">
+				<hr>
+				<p class="centertext">Since we have gotten all character to return this time around, many people were wondering about the stages. Although not all stages
+				will be returning, most of them will, along with brand new stages. So far, they seem to be based on games released on the Nintendo Switch. Two of the new
+				stages they showed off were the Great Plateau Tower from the Legend of Zelda and Moray Towers from Splatoon.</p>
+				<hr>
+				<div class="flex-container">
+					<div><img src="./assets/ZeldaStage.jpg" alt="Great Plateau Tower stage"></div>
+					<div><img src="./assets/SplatoonStage.png" alt="Moray Towers stage"></div>
+				</div>
+			</div>
+
+			<h2>Assist Trophies Confirmed</h2>
+			<div class="container">
+				<img src="./assets/AssistTrophy.jpg" alt="Assist trophies" width="45%" height="300px" min-width="200px" border="2px" class="floatleft">
+				<hr>
+				<p class="centertext">Many new assist trophies have already been announced covering many different game series. The ones they announced so far include
+				Krystal, Knuckles, the squid sisters, Samurai Goroh, Waluigi(sadly), and Bomberman. Though your favorite character might not make the roster, you can still
+				hope they make it as an assist trophy.</p> 
+				<hr>
+				<div class="flex-container">
+					<div><img src="./assets/BombermanTrophy.png" alt="Bomberman"></div>
+					<div><img src="./assets/WaluigiTrophy.png" alt="Waluigi"></div>
+				</div>
+			</div>
+		</main>
+		<br>
+
+		<footer>
+			Author: Devin Vella Date:7/22/18<br>
+			"Copyright &copy; 2018 Smash Bros. Source"<br>
+			<a href="http://example@domain.com">example@domain.com</a>
+		</footer>
+	</body>
+</html>
